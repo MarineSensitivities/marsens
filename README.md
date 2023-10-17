@@ -1,2 +1,3 @@
-# oesi4r
-R library of functions for BOEM's offshore environmental sensitivity index
+# msens
+R library of functions for mapping marine sensitivities, sponsored by BOEM
+
