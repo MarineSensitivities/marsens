@@ -1,11 +1,17 @@
 Package: msens
 Type: Package
-Title: What the Package Does (Title Case)
+Title: R library of functions for mapping marine sensitivities, sponsored by BOEM
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
+URL: https://github.com/MarineSensitivities/msens, https://MarineSensitivities.org/msens, http://marinesensitivities.org/msens/
+BugReports: https://github.com/MarineSensitivities/msens/issues
+Authors@R: 
+    c(person(given = "Ben",
+           family = "Best",
+           role = c("aut", "cre"),
+           email = "ben@ecoquants.com",
+           comment = c(ORCID = "0000-0002-2686-0784")))
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
