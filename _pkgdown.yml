@@ -1,4 +1,25 @@
 url: http://marinesensitivities.org/msens/
 template:
   bootstrap: 5
-
+  assets: inst
+reference:
+- title: Read
+  desc: Fetch data, spatial and non-spatial, especially from APIs
+  contents:
+  - has_concept("read")
+- title: Analyze
+  desc: Analyses
+  contents:
+  - has_concept("analyze")
+- title: Visualize
+  desc: Plot and map Seascapes
+  contents:
+  - has_concept("viz")
+- title: Data
+  desc: Lookups for easy reference
+  contents:
+  - has_concept("data")
+- title: Other
+  desc: Other functions not defined by the concepts above
+  contents:
+  - lacks_concepts(c("read", "analyze", "viz", "data"))
