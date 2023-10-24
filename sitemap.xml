@@ -16,10 +16,16 @@
     <loc>http://marinesensitivities.org/msens/index.html</loc>
   </url>
   <url>
+    <loc>http://marinesensitivities.org/msens/news/index.html</loc>
+  </url>
+  <url>
     <loc>http://marinesensitivities.org/msens/reference/hello.html</loc>
   </url>
   <url>
     <loc>http://marinesensitivities.org/msens/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>http://marinesensitivities.org/msens/reference/ms_basemap.html</loc>
   </url>
   <url>
     <loc>http://marinesensitivities.org/msens/reference/ply_rgns.html</loc>
