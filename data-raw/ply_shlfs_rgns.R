@@ -1,6 +1,6 @@
 # See workup of data with visuals here:
-# - [explore_regions.qmd](https://github.com/MarineSensitivities/workflows/blob/ff7dc184885300b02320029852d3deb5117a32a0/explore_regions.qmd)
-# - [explore_regions.html](https://marinesensitivities.org/workflows/explore_regions.html)
+# - [explore_regions.qmd](https://github.com/MarineSensitivity/workflows/blob/ff7dc184885300b02320029852d3deb5117a32a0/explore_regions.qmd)
+# - [explore_regions.html](https://marinesensitivity.org/workflows/explore_regions.html)
 
 librarian::shelf(
   dplyr, glue, janitor, here, rmapshaper, sf,
