@@ -3,7 +3,7 @@ pkgdown: 2.0.7
 pkgdown_sha: ~
 articles:
   msens: msens.html
-last_built: 2024-01-25T06:50Z
+last_built: 2024-01-25T07:40Z
 urls:
   reference: http://marinesensitivity.org/msens/reference
   article: http://marinesensitivity.org/msens/articles
