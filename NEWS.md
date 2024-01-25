@@ -1,3 +1,7 @@
+# msens 0.1.2
+
+* Added `get_species_by_feature()` to read from API endpoint.
+
 # msens 0.1.1
 
 * Added simple `ms_basemap()` to support map app.
