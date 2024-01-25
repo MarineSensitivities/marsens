@@ -3,16 +3,16 @@
 \docType{data}
 \name{ply_shlfs_s05}
 \alias{ply_shlfs_s05}
-\title{Polygons of Shelf Regions, simplified to 5\%}
+\title{Polygons of Shelf Regions, simplified to 5\\%}
 \format{
 A spatial features \pkg{sf} data frame with 5 rows and 6 columns:
 \describe{
-  \item{shlf_key}{key for shelf polygon containing region}
-  \item{shlf_name}{name for shelf polygon containing region}
-  \item{ctr_lon}{centroid longitude}
-  \item{ctr_lat}{centroid longitude}
-  \item{area_km2}{area in square kilometers}
-  \item{geometry}{geometry of polygon as `sf::st_geometry()`}
+\item{shlf_key}{key for shelf polygon containing region}
+\item{shlf_name}{name for shelf polygon containing region}
+\item{ctr_lon}{centroid longitude}
+\item{ctr_lat}{centroid longitude}
+\item{area_km2}{area in square kilometers}
+\item{geometry}{geometry of polygon as \code{sf::st_geometry()}}
 }
 }
 \source{
@@ -27,7 +27,7 @@ Intersection of polygons describing the BOEM internal regions (\href{https://www
 clipped to the federal U.S. waters between the 200 nm Exclusive Economic Zone
 and 12 nm state waters (\href{https://marinecadastre-noaa.hub.arcgis.com/datasets/noaa::outer-continental-shelf-lands-act/about}{MarineCadastre Outer Continental Shelf Lands Act}).
 Summarized to Outer Continental Shelf (OCS) region name (key): Alaska (AK), Atlantic (ATL), Gulf of Mexico (GOM), Hawaii (HI), Pacific (PAC).
-Simplified to 5\% of original vertices for quickly plotting.
+Simplified to 5\\% of original vertices for quickly plotting.
 }
 \concept{data}
 \keyword{datasets}

@@ -7,12 +7,12 @@
 \format{
 A spatial features \pkg{sf} data frame with 5 rows and 6 columns:
 \describe{
-  \item{shlf_key}{key for shelf polygon containing region}
-  \item{shlf_name}{name for shelf polygon containing region}
-  \item{ctr_lon}{centroid longitude}
-  \item{ctr_lat}{centroid longitude}
-  \item{area_km2}{area in square kilometers}
-  \item{geometry}{geometry of polygon as `sf::st_geometry()`}
+\item{shlf_key}{key for shelf polygon containing region}
+\item{shlf_name}{name for shelf polygon containing region}
+\item{ctr_lon}{centroid longitude}
+\item{ctr_lat}{centroid longitude}
+\item{area_km2}{area in square kilometers}
+\item{geometry}{geometry of polygon as \code{sf::st_geometry()}}
 }
 }
 \source{
