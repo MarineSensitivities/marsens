@@ -10,6 +10,12 @@
     <loc>http://marinesensitivity.org/msens/LICENSE.html</loc>
   </url>
   <url>
+    <loc>http://marinesensitivity.org/msens/articles/index.html</loc>
+  </url>
+  <url>
+    <loc>http://marinesensitivity.org/msens/articles/msens.html</loc>
+  </url>
+  <url>
     <loc>http://marinesensitivity.org/msens/authors.html</loc>
   </url>
   <url>
@@ -17,6 +23,9 @@
   </url>
   <url>
     <loc>http://marinesensitivity.org/msens/news/index.html</loc>
+  </url>
+  <url>
+    <loc>http://marinesensitivity.org/msens/reference/get_species_by_feature.html</loc>
   </url>
   <url>
     <loc>http://marinesensitivity.org/msens/reference/hello.html</loc>
