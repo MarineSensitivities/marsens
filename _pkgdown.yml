@@ -7,6 +7,10 @@ reference:
   desc: Fetch data, spatial and non-spatial, especially from APIs
   contents:
   - has_concept("read")
+- title: Taxonomic
+  desc: Match taxa from APIs, especially World Register of Marine Species (WoRMS)
+  contents:
+  - has_concept("taxa")
 - title: Analyze
   desc: Analyses
   contents:
