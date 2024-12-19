@@ -1,51 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>http://marinesensitivity.org/msens/404.html</loc>
-  </url>
-  <url>
-    <loc>http://marinesensitivity.org/msens/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>http://marinesensitivity.org/msens/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>http://marinesensitivity.org/msens/articles/index.html</loc>
-  </url>
-  <url>
-    <loc>http://marinesensitivity.org/msens/articles/msens.html</loc>
-  </url>
-  <url>
-    <loc>http://marinesensitivity.org/msens/authors.html</loc>
-  </url>
-  <url>
-    <loc>http://marinesensitivity.org/msens/index.html</loc>
-  </url>
-  <url>
-    <loc>http://marinesensitivity.org/msens/news/index.html</loc>
-  </url>
-  <url>
-    <loc>http://marinesensitivity.org/msens/reference/get_species_by_feature.html</loc>
-  </url>
-  <url>
-    <loc>http://marinesensitivity.org/msens/reference/hello.html</loc>
-  </url>
-  <url>
-    <loc>http://marinesensitivity.org/msens/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>http://marinesensitivity.org/msens/reference/ms_basemap.html</loc>
-  </url>
-  <url>
-    <loc>http://marinesensitivity.org/msens/reference/ply_rgns.html</loc>
-  </url>
-  <url>
-    <loc>http://marinesensitivity.org/msens/reference/ply_rgns_s05.html</loc>
-  </url>
-  <url>
-    <loc>http://marinesensitivity.org/msens/reference/ply_shlfs.html</loc>
-  </url>
-  <url>
-    <loc>http://marinesensitivity.org/msens/reference/ply_shlfs_s05.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>http://marinesensitivity.org/msens/404.html</loc></url>
+<url><loc>http://marinesensitivity.org/msens/LICENSE-text.html</loc></url>
+<url><loc>http://marinesensitivity.org/msens/LICENSE.html</loc></url>
+<url><loc>http://marinesensitivity.org/msens/articles/index.html</loc></url>
+<url><loc>http://marinesensitivity.org/msens/articles/msens.html</loc></url>
+<url><loc>http://marinesensitivity.org/msens/authors.html</loc></url>
+<url><loc>http://marinesensitivity.org/msens/index.html</loc></url>
+<url><loc>http://marinesensitivity.org/msens/news/index.html</loc></url>
+<url><loc>http://marinesensitivity.org/msens/reference/get_species_by_feature.html</loc></url>
+<url><loc>http://marinesensitivity.org/msens/reference/index.html</loc></url>
+<url><loc>http://marinesensitivity.org/msens/reference/ms_basemap.html</loc></url>
+<url><loc>http://marinesensitivity.org/msens/reference/ply_boemrgns.html</loc></url>
+<url><loc>http://marinesensitivity.org/msens/reference/ply_boemrgns_s05.html</loc></url>
+<url><loc>http://marinesensitivity.org/msens/reference/ply_ecoareas.html</loc></url>
+<url><loc>http://marinesensitivity.org/msens/reference/ply_ecoareas_s05.html</loc></url>
+<url><loc>http://marinesensitivity.org/msens/reference/ply_ecorgns.html</loc></url>
+<url><loc>http://marinesensitivity.org/msens/reference/ply_ecorgns_s05.html</loc></url>
+<url><loc>http://marinesensitivity.org/msens/reference/ply_planareas.html</loc></url>
+<url><loc>http://marinesensitivity.org/msens/reference/ply_planareas_s05.html</loc></url>
+<url><loc>http://marinesensitivity.org/msens/reference/wm_rest.html</loc></url>
 </urlset>
+
