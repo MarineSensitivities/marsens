@@ -26,4 +26,4 @@ reference:
 - title: Other
   desc: Other functions not defined by the concepts above
   contents:
-  - lacks_concepts(c("read", "analyze", "viz", "data"))
+  - lacks_concepts(c("read", "analyze", "viz", "data", "taxa"))

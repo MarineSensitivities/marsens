@@ -37,7 +37,8 @@
 #'            ~common,                     ~scientific, aphia_id_0,
 #'      "Minke whale",     "Balaenoptera acutorostrata", 137087,
 #'       "Blue whale",          "Balaenoptera musculus", 137090,
-#' "Bonaparte's Gull",   "Chroicocephalus philadelphia", 882954) # 882954 invalid non-marine -> valid marine 159076
+#' "Bonaparte's Gull",   "Chroicocephalus philadelphia", 882954)
+#' # 882954 invalid non-marine -> valid marine 159076
 #'
 #' wm_exact <- wm_rest(tmp_test, scientific, "AphiaRecordsByMatchNames")
 #' wm_fuzzy <- wm_rest(tmp_test, scientific, "AphiaRecordsByNames")
@@ -47,7 +48,6 @@ wm_rest <- function(
     df, fld,
     operation = "AphiaRecordsByMatchNames",
     server    = "https://www.marinespecies.org/rest",
-    verbose   = F,
     ...){
   # operation="AphiaRecordsByNames"; server="https://www.marinespecies.org/rest"
 
@@ -71,7 +71,7 @@ wm_rest <- function(
         httr2::req_url_path_append(operation) %>%
         httr2::req_url_path_append(utils::URLencode(vals))
     } else {
-      q <- setNames(vals, rep(op$param, length(vals)))
+      q <- stats::setNames(vals, rep(op$param, length(vals)))
       req <- httr2::request(server) %>%
         httr2::req_url_path_append(operation)
     }
@@ -85,8 +85,7 @@ wm_rest <- function(
   # helper function to transform response to data frame
   get_df <- function(resp, i=0){
     if (inherits(resp, "error")){
-      message(glue::glue("  DOH! resp error in get_df(resp, {i}), prob URL with {nchar(d$req[[i]]$url)} characters is too long"))
-      browser()
+      stop(glue::glue("  DOH! resp error in get_df(resp, {i}), prob URL with {nchar(d$req[[i]]$url)} characters is too long"))
     }
     if (resp$status_code == 204) # No Content
       return(NA)
@@ -97,15 +96,15 @@ wm_rest <- function(
     if(inherits(d, "list")){
       d <- d %>%
         lapply(tibble::as_tibble) %>%
-        bind_rows()
+        dplyr::bind_rows()
     }
     d %>%
       janitor::clean_names()
   }
 
   # get operation parameters
-  op <- wm_rest_params %>%
-    filter(operation == !!operation)
+  op <- msens::wm_rest_params %>%
+    dplyr::filter(operation == !!operation)
   is_paging <- nrow(op) == 1 && !is.na(op$max_req)
 
   # formulate requests, based on whether paging operation
@@ -128,7 +127,7 @@ wm_rest <- function(
 
     # fetch aphia records, bind results, clean column names, remove duplicats
     d <- d %>%
-      mutate(
+      dplyr::mutate(
         req = purrr::map2(
           i_beg, i_end,
           ~get_req(vals = vals[.x:.y])))
@@ -159,8 +158,8 @@ wm_rest <- function(
     mutate(
       resp = req_perform_parallel(req),
       df   = imap(resp, get_df)) %>%
-    select(-req, -resp) %>%
-    unnest(df)
+    dplyr::select(-req, -resp) %>%
+    tidyr::unnest(df)
 
   # if not paging, rename field vals to original input fld
   if (!is_paging){
@@ -169,10 +168,10 @@ wm_rest <- function(
       fld_val <- glue::glue("_{fld_val}")
     flds_rnm <- setNames("val", fld_val)
     d <- d %>%
-      rename(!!!flds_rnm)
+      dplyr::rename(!!!flds_rnm)
   } else {
     d <- d %>%
-      select(-i_beg, -i_end)
+      dplyr::select(-i_beg, -i_end)
   }
 
   d

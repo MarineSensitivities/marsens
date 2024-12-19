@@ -1,3 +1,14 @@
+# msens 0.2.0
+
+* Swapped polygons:
+  - OLD: hierarchy `ply_shlfs` > `ply_rgns` (and `*_s05`
+  simplifications) that were clipped to US EEZ.
+  - NEW: hierarchy `ply_boemrgns` > `ply_ecorgns` | `ply_planareas` > 
+  `ply_ecoareas`, which are the intersection of `ply_ecorgns` and `ply_planareas`.
+  Created `*_s05` simplifications of each. The new polygons conform to BOEM's
+  original nomenclature for "OCS Regions", Planning Areas" and "Ecoregions". 
+  These polygons are not clipped to the US EEZ.
+
 # msens 0.1.2
 
 * Added `get_species_by_feature()` to read from API endpoint.

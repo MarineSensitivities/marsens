@@ -9,7 +9,6 @@ wm_rest(
   fld,
   operation = "AphiaRecordsByMatchNames",
   server = "https://www.marinespecies.org/rest",
-  verbose = F,
   ...
 )
 }
@@ -46,7 +45,8 @@ tmp_test <- tibble::tribble(
            ~common,                     ~scientific, aphia_id_0,
      "Minke whale",     "Balaenoptera acutorostrata", 137087,
       "Blue whale",          "Balaenoptera musculus", 137090,
-"Bonaparte's Gull",   "Chroicocephalus philadelphia", 882954) # 882954 invalid non-marine -> valid marine 159076
+"Bonaparte's Gull",   "Chroicocephalus philadelphia", 882954)
+# 882954 invalid non-marine -> valid marine 159076
 
 wm_exact <- wm_rest(tmp_test, scientific, "AphiaRecordsByMatchNames")
 wm_fuzzy <- wm_rest(tmp_test, scientific, "AphiaRecordsByNames")
